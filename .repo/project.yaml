@@ -1,13 +1,13 @@
 schema_version: 1
 project_id: kitabs
 repository: soobujmiah/kitabs
-generated_at: '2026-10-04T14:38:30Z'
+generated_at: '2026-10-04T14:56:55Z'
 generated_by: tools/repo_knowledge collect
-version: phase-00-done-1-g09ffe08
+version: phase-00-done-3-g120f862
 head:
-  commit: 09ffe085be1344cf00353d8b9475c59a3290fb63
+  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
   branch: main
-  committed_at: '2026-10-04T14:38:30Z'
+  committed_at: '2026-10-04T14:55:47Z'
 phases:
   source: .repo/phases.yaml
   completed:
@@ -16,25 +16,25 @@ phases:
   next: PHASE-02 Visual and Reader Foundation
 build:
   status: passed
-  run_id: null
-  commit: 09ffe085be1344cf00353d8b9475c59a3290fb63
+  run_id: '37211105994'
+  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
   run_attempt: '1'
-  at: '2026-10-04T14:38:30Z'
-  timestamp_source: commit
+  at: '2026-10-04T14:56:55Z'
+  timestamp_source: observed
 test:
   status: passed
-  run_id: null
-  commit: 09ffe085be1344cf00353d8b9475c59a3290fb63
+  run_id: '37211105994'
+  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
   run_attempt: '1'
-  at: '2026-10-04T14:38:30Z'
-  timestamp_source: commit
-  summary: 'Local npm check: 4 tests; repo-knowledge: 39 tests; Pages-path build passed'
+  at: '2026-10-04T14:56:55Z'
+  timestamp_source: observed
+  summary: 'npm check and repo-knowledge tests: success'
 last_successful_build:
-  commit: 09ffe085be1344cf00353d8b9475c59a3290fb63
-  at: '2026-10-04T14:38:30Z'
-  run_id: null
+  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
+  at: '2026-10-04T14:56:55Z'
+  run_id: '37211105994'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-10-04T14:38:30Z'
-  source: local
+  last_synced_at: '2026-10-04T14:56:55Z'
+  source: ci

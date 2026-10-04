@@ -2,15 +2,15 @@
 # kitabs -- deterministic status
 
 - Repository: `soobujmiah/kitabs`
-- Generated at: 2026-10-04T14:38:30Z (by `tools/repo_knowledge collect`)
-- Version: `phase-00-done-1-g09ffe08`
-- Head: `09ffe085be1344cf00353d8b9475c59a3290fb63` on `main` (2026-10-04T14:38:30Z)
+- Generated at: 2026-10-04T14:56:55Z (by `tools/repo_knowledge collect`)
+- Version: `phase-00-done-3-g120f862`
+- Head: `120f862a89969e7fa1d474ab0283ea5202dea45b` on `main` (2026-10-04T14:55:47Z)
 
 ## Build / test
 
-- Build: **passed**
-- Test: **passed** -- Local npm check: 4 tests; repo-knowledge: 39 tests; Pages-path build passed
-- Last successful build: `09ffe085be1344cf00353d8b9475c59a3290fb63` at 2026-10-04T14:38:30Z
+- Build: **passed** (run `37211105994`)
+- Test: **passed** -- npm check and repo-knowledge tests: success
+- Last successful build: `120f862a89969e7fa1d474ab0283ea5202dea45b` at 2026-10-04T14:56:55Z
 
 ## Phases
 - Completed: PHASE-00 Documentation
@@ -20,5 +20,5 @@
 ## Sync
 
 - Status: ok
-- Source: local
-- Last synced at: 2026-10-04T14:38:30Z
+- Source: ci
+- Last synced at: 2026-10-04T14:56:55Z

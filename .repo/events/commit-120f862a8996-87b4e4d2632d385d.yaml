@@ -1,0 +1,7 @@
+event_id: commit-120f862a8996-87b4e4d2632d385d
+repository: soobujmiah/kitabs
+commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
+kind: commit
+occurred_at: '2026-10-04T14:55:47Z'
+status: completed
+summary: 'fix(ci): sync repository state on manual runs'
