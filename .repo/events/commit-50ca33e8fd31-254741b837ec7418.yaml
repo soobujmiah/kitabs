@@ -1,0 +1,7 @@
+event_id: commit-50ca33e8fd31-254741b837ec7418
+repository: soobujmiah/kitabs
+commit: 50ca33e8fd3111be332bba3249a939c064cdc879
+kind: commit
+occurred_at: '2026-10-04T15:21:06Z'
+status: completed
+summary: 'feat(reader): start phase 02 reading controls and design'

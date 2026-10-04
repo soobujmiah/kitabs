@@ -1,13 +1,13 @@
 schema_version: 1
 project_id: kitabs
 repository: soobujmiah/kitabs
-generated_at: '2026-10-04T15:04:40Z'
+generated_at: '2026-10-04T15:21:49Z'
 generated_by: tools/repo_knowledge collect
-version: phase-01-done
+version: phase-01-done-2-g50ca33e
 head:
-  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
+  commit: 50ca33e8fd3111be332bba3249a939c064cdc879
   branch: main
-  committed_at: '2026-10-04T15:03:51Z'
+  committed_at: '2026-10-04T15:21:06Z'
 phases:
   source: .repo/phases.yaml
   completed:
@@ -17,25 +17,25 @@ phases:
   next: PHASE-03 Entry Book
 build:
   status: passed
-  run_id: '37211602906'
-  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
+  run_id: '37212670802'
+  commit: 50ca33e8fd3111be332bba3249a939c064cdc879
   run_attempt: '1'
-  at: '2026-10-04T15:04:40Z'
+  at: '2026-10-04T15:21:49Z'
   timestamp_source: observed
 test:
   status: passed
-  run_id: '37211602906'
-  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
+  run_id: '37212670802'
+  commit: 50ca33e8fd3111be332bba3249a939c064cdc879
   run_attempt: '1'
-  at: '2026-10-04T15:04:40Z'
+  at: '2026-10-04T15:21:49Z'
   timestamp_source: observed
   summary: 'npm check and repo-knowledge tests: success'
 last_successful_build:
-  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
-  at: '2026-10-04T15:04:40Z'
-  run_id: '37211602906'
+  commit: 50ca33e8fd3111be332bba3249a939c064cdc879
+  at: '2026-10-04T15:21:49Z'
+  run_id: '37212670802'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-10-04T15:04:40Z'
+  last_synced_at: '2026-10-04T15:21:49Z'
   source: ci
