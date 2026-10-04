@@ -46,6 +46,9 @@ button:focus-visible {
   justify-content: space-between;
   padding: 0 clamp(1rem, 5vw, 5rem);
   border-bottom: 1px solid #ffffff24;
+  background: #171411e8;
+  position: relative;
+  z-index: 5;
 }
 .brand {
   font-family: Georgia, serif;
@@ -75,7 +78,7 @@ button:focus-visible {
   max-width: 1500px;
   margin: auto;
   padding: 4rem clamp(1rem, 7vw, 7rem);
-  background: radial-gradient(circle at 75% 47%, #63462f55, transparent 45%);
+  background: radial-gradient(circle at 78% 44%, #916a3760, transparent 38%), radial-gradient(circle at 10% 85%, #4d342540, transparent 45%);
 }
 .hero-copy {
   z-index: 1;
@@ -153,6 +156,23 @@ button:focus-visible {
   color: var(--brass);
   font-family: Georgia, serif;
   letter-spacing: 0.12em;
+  position: relative;
+  overflow: hidden;
+}
+.hero-book-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 8%;
+  width: 1px;
+  background: #d7b67788;
+  box-shadow: 3px 0 9px #000b, -3px 0 9px #c9a87866;
+}
+.hero-book-cover::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  border: 1px solid #b9945780;
+  pointer-events: none;
 }
 .hero-book-cover span {
   font-size: clamp(1.4rem, 3vw, 2.5rem);
@@ -195,6 +215,12 @@ button:focus-visible {
   border: 1px solid #ffffff2b;
   text-decoration: none;
   background: #ffffff08;
+  border-radius: 2px;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.collection-list a:hover, .collection-list a:focus-visible {
+  background: #c5a4691a;
+  transform: translateY(-3px);
 }
 .collection-list strong {
   font:
@@ -214,6 +240,12 @@ button:focus-visible {
   border: 1px solid #ffffff2b;
   padding: 1rem;
   background: #ffffff08;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+.book-card:hover, .book-card:focus-within {
+  border-color: var(--brass);
+  background: #ffffff0f;
+  transform: translateY(-4px);
 }
 .book-card img {
   width: 100%;
@@ -280,9 +312,38 @@ button:focus-visible {
 .reader-page {
   color: #251e18;
   background: var(--paper);
-  padding: 3rem clamp(1rem, 5vw, 5rem);
+  padding: 0;
   min-height: 75vh;
 }
+.reader-shell { min-height: 75vh; padding-bottom: 5rem; background: var(--paper); color: #251e18; }
+.reader-night { background: #1c1c1b; color: #eee7d9; }
+.reader-toolbar { border-bottom: 1px solid currentColor; background: #e1d5c1; color: #251e18; }
+.reader-night .reader-toolbar { background: #272727; color: #eee7d9; }
+.reader-toolbar-inner { max-width: 900px; margin: auto; padding: .7rem 1rem; display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.5rem; }
+.reader-toolbar-label { font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; margin-right: auto; }
+.reader-control-group { display: flex; align-items: center; gap: .35rem; font-size: .85rem; }
+.reader-control-group button { min-width: 44px; min-height: 44px; border: 1px solid currentColor; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.reader-control-group button[aria-pressed="true"] { background: #785627; color: white; border-color: #785627; }
+.reader-night .reader-control-group button[aria-pressed="true"] { background: #d4b176; color: #171411; }
+.reader-control-group button:disabled { opacity: .45; cursor: not-allowed; }
+.reader-head { padding: 4rem 1rem 0; }
+.reader-head a, .reader-end a { text-underline-offset: .25em; }
+.reader-head .eyebrow { margin-top: 3rem; }
+.reader-head p:last-child { max-width: 40rem; line-height: 1.6; }
+.reader-night .reader-head .eyebrow { color: #d4b176; }
+.toc { border-left: 3px solid #987342; background: #ffffff55; }
+.reader-night .toc { background: #ffffff08; border-color: #d4b176; }
+.toc h2 { font: 400 1.6rem Georgia, serif; margin: 0 0 1rem; }
+.toc a { text-underline-offset: .25em; }
+.chapter { padding: 0 1rem; font-size: 1.18rem; }
+.reader-size-large .chapter { font-size: 1.4rem; }
+.reader-size-larger .chapter { font-size: 1.65rem; }
+.chapter p { margin: 0 0 1.3em; }
+.chapter p:first-of-type::first-letter { font-size: 2.6em; line-height: 1; float: left; margin: .06em .12em 0 0; color: #785627; }
+.reader-night .chapter p:first-of-type::first-letter { color: #d4b176; }
+.reader-end { max-width: 740px; margin: 5rem auto 0; padding: 2rem 1rem; text-align: center; border-top: 1px solid currentColor; }
+.reader-end span { color: #987342; }
+.reader-end p { font: 1.3rem Georgia, serif; }
 .reader-head,
 .toc,
 .chapter {

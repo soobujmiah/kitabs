@@ -8,7 +8,7 @@
 - `BookRepository` interface, static adapter, Zod records, duplicate/reference/path/size/rights validation. Published book/cover/reader require verified rights and appropriate actions.
 - Semantic home, collection, book, one-chapter reader, metadata, JSON-LD, sitemap, robots, 404 routes. The scene is not implemented in this phase.
 - One public-domain sample: *Pride and Prejudice* (1813 original English text) chapter 1 extracted from pinned Standard Ebooks source; original Kitabs cover. `docs/rights/pride-and-prejudice.md` records bounded rights evidence. The 445 web-collected local files remain outside Git and site output.
-- MIT software license and reserved original design asset notice, `repo-knowledge` tool/schemas, and CI workflow. Public GitHub remote/CI and Pages are not yet verified.
+- MIT software license and reserved original design asset notice, `repo-knowledge` tool/schemas, and CI workflow. Public GitHub remote and CI are verified; Pages deployment remains outstanding.
 
 ## Verification log
 

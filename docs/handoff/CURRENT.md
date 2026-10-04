@@ -1,6 +1,6 @@
 # Current handoff
 
-**Date:** 2026-10-04. **Project:** `kitabs`. **Human-authored state:** PHASE-00 documentation and PHASE-01 static foundation passed their gates; PHASE-02 visual/reader foundation is next; no site released. See [phase evidence](../phases/PHASE-01.md). This file does not replace mechanical Git/CI status; use `.repo/STATUS.md`.
+**Date:** 2026-10-04. **Project:** `kitabs`. **Human-authored state:** PHASE-00 documentation and PHASE-01 static foundation passed their gates; PHASE-02 visual/reader work is in progress; no site released. See [phase evidence](../phases/PHASE-01.md) and [current phase evidence](../phases/PHASE-02.md). This file does not replace mechanical Git/CI status; use `.repo/STATUS.md`.
 
 ## Completed evidence
 
@@ -11,8 +11,8 @@
 
 ## Decisions and uncertainty
 
-Documentation selects static Next.js export + R3F/Three.js + GSAP as the current MVP architecture, with public static metadata and Markdown-to-HTML reader. This is a design decision, not evidence of a working build. Performance budgets are provisional. Owner chose public GitHub repository and MIT software license, reserving original visual identity/design assets. The initial catalogue, identity/visual review, and custom URL remain open. The owner's web-collected `/sdcard/Documents/Books` files have no redistribution rights evidence and are excluded from publication.
+Documentation selects static Next.js export + R3F/Three.js + GSAP as the current MVP architecture, with public static metadata and Markdown-to-HTML reader. The static foundation builds and passes CI; the 3D scene is still planned. Performance budgets are provisional. Owner chose public GitHub repository and MIT software license, reserving original visual identity/design assets. The initial catalogue, identity/visual review, and custom URL remain open. The owner's web-collected `/sdcard/Documents/Books` files have no redistribution rights evidence and are excluded from publication.
 
 ## Next gate
 
-Implement PHASE-02 as a complete DOM-first visual/reader experience, then work through later scene, interaction, accessibility, performance, and release phases in order. The public GitHub repository, CI checks, and CI state sync are verified. Before Pages deployment, complete release criteria, settle domain, and obtain production authorization. Do not copy the web-collected `/sdcard` files.
+Finish PHASE-02 as a complete DOM-first visual/reader experience. Current unreviewed changes are documented in PHASE-02; `npm run check` passed locally. Then work through scene, interaction, accessibility, performance, and release phases in order. Public GitHub repository, CI checks, and CI state sync are verified. Before Pages deployment, complete release criteria and resolve domain/production authorization. Do not copy the web-collected `/sdcard` files. The graphify CLI is broken by its Python tree-sitter import; graph update remains outstanding.
