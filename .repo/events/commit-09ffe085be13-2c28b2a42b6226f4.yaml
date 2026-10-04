@@ -1,0 +1,7 @@
+event_id: commit-09ffe085be13-2c28b2a42b6226f4
+repository: soobujmiah/kitabs
+commit: 09ffe085be1344cf00353d8b9475c59a3290fb63
+kind: commit
+occurred_at: '2026-10-04T14:38:30Z'
+status: completed
+summary: 'feat: establish rights-gated static library foundation'
