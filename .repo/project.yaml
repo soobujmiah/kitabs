@@ -1,40 +1,41 @@
 schema_version: 1
 project_id: kitabs
 repository: soobujmiah/kitabs
-generated_at: '2026-10-04T14:56:55Z'
+generated_at: '2026-10-04T15:04:40Z'
 generated_by: tools/repo_knowledge collect
-version: phase-00-done-3-g120f862
+version: phase-01-done
 head:
-  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
+  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
   branch: main
-  committed_at: '2026-10-04T14:55:47Z'
+  committed_at: '2026-10-04T15:03:51Z'
 phases:
   source: .repo/phases.yaml
   completed:
   - PHASE-00 Documentation
-  active: PHASE-01 Static Foundation
-  next: PHASE-02 Visual and Reader Foundation
+  - PHASE-01 Static Foundation
+  active: PHASE-02 Visual and Reader Foundation
+  next: PHASE-03 Entry Book
 build:
   status: passed
-  run_id: '37211105994'
-  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
+  run_id: '37211602906'
+  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
   run_attempt: '1'
-  at: '2026-10-04T14:56:55Z'
+  at: '2026-10-04T15:04:40Z'
   timestamp_source: observed
 test:
   status: passed
-  run_id: '37211105994'
-  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
+  run_id: '37211602906'
+  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
   run_attempt: '1'
-  at: '2026-10-04T14:56:55Z'
+  at: '2026-10-04T15:04:40Z'
   timestamp_source: observed
   summary: 'npm check and repo-knowledge tests: success'
 last_successful_build:
-  commit: 120f862a89969e7fa1d474ab0283ea5202dea45b
-  at: '2026-10-04T14:56:55Z'
-  run_id: '37211105994'
+  commit: 2267e9b9db44eb5d1a31f54330c40e8d918081af
+  at: '2026-10-04T15:04:40Z'
+  run_id: '37211602906'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-10-04T14:56:55Z'
+  last_synced_at: '2026-10-04T15:04:40Z'
   source: ci

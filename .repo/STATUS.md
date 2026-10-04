@@ -2,23 +2,23 @@
 # kitabs -- deterministic status
 
 - Repository: `soobujmiah/kitabs`
-- Generated at: 2026-10-04T14:56:55Z (by `tools/repo_knowledge collect`)
-- Version: `phase-00-done-3-g120f862`
-- Head: `120f862a89969e7fa1d474ab0283ea5202dea45b` on `main` (2026-10-04T14:55:47Z)
+- Generated at: 2026-10-04T15:04:40Z (by `tools/repo_knowledge collect`)
+- Version: `phase-01-done`
+- Head: `2267e9b9db44eb5d1a31f54330c40e8d918081af` on `main` (2026-10-04T15:03:51Z)
 
 ## Build / test
 
-- Build: **passed** (run `37211105994`)
+- Build: **passed** (run `37211602906`)
 - Test: **passed** -- npm check and repo-knowledge tests: success
-- Last successful build: `120f862a89969e7fa1d474ab0283ea5202dea45b` at 2026-10-04T14:56:55Z
+- Last successful build: `2267e9b9db44eb5d1a31f54330c40e8d918081af` at 2026-10-04T15:04:40Z
 
 ## Phases
-- Completed: PHASE-00 Documentation
-- Active: PHASE-01 Static Foundation
-- Next: PHASE-02 Visual and Reader Foundation
+- Completed: PHASE-00 Documentation, PHASE-01 Static Foundation
+- Active: PHASE-02 Visual and Reader Foundation
+- Next: PHASE-03 Entry Book
 
 ## Sync
 
 - Status: ok
 - Source: ci
-- Last synced at: 2026-10-04T14:56:55Z
+- Last synced at: 2026-10-04T15:04:40Z
