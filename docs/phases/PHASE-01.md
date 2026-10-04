@@ -1,6 +1,6 @@
 # PHASE-01 — static foundation evidence
 
-**Status:** locally verified; GitHub CI and repository state sync pending. **Objective:** a rights-gated, crawlable static catalogue/reader foundation and reproducible CI. The phase is not complete until GitHub CI and `.repo/` sync are verified.
+**Status:** locally verified; GitHub checks passed, CI repository state sync pending. **Objective:** a rights-gated, crawlable static catalogue/reader foundation and reproducible CI. The phase is not complete until `.repo/` CI sync is verified.
 
 ## Implemented
 
@@ -19,7 +19,8 @@
 - Final `npm run check` passed: one validated published book/collection/cover/reader, lint, typecheck, four unit tests, and eight exported pages. The build was rerun with `KITABS_BASE_PATH=/kitabs` and `KITABS_SITE_ORIGIN=https://soobujmiah.github.io`; source inspection confirmed project-prefixed JS/cover/book links, canonical URL, and sitemap reader URL.
 - `npm install` after replacing vulnerable lint/test transitive dependencies reported zero vulnerabilities; separate `npm audit --audit-level=moderate` also found zero vulnerabilities.
 - `graphify update .` was attempted twice after code changes and failed with `cannot import name 'Node' from 'tree_sitter'`, even after a focused reinstall of the graphify environment's tree-sitter package. Graph output is unverified; this does not affect app build.
+- GitHub Actions workflow `Kitabs CI and Repository State` run [37210636276](https://github.com/soobujmiah/kitabs/actions/runs/37210636276) completed successfully on the public repository at the phase source/state commit. The first push yielded no run, so it was triggered with `workflow_dispatch`. Its `sync` job was originally push-only and skipped on manual dispatch; the workflow condition has been corrected and requires another run to verify CI state sync.
 
 ## Remaining phase gates
 
-Verify CI run after public remote push, deterministic `.repo/` sync, source/rights exclusion audit, docs/traceability consistency, and reviewed commit. Accessibility/browser/device measurements and aesthetic approval remain later phases. No production deployment is included in PHASE-01.
+Verify deterministic `.repo/` CI sync, source/rights exclusion audit, docs/traceability consistency, and reviewed commit. Accessibility/browser/device measurements and aesthetic approval remain later phases. No production deployment is included in PHASE-01.
