@@ -1,0 +1,18 @@
+{
+  "id": "pride-and-prejudice",
+  "slug": "pride-and-prejudice",
+  "title": "Pride and Prejudice",
+  "authors": ["Jane Austen"],
+  "description": "Austen's novel follows the Bennet family through questions of marriage, money, reputation, and first impressions.",
+  "language": "en",
+  "publishedYear": 1813,
+  "categoryId": "classics",
+  "tagIds": ["novel", "romance"],
+  "collectionIds": ["classics"],
+  "coverAssetId": "pride-cover",
+  "readerContentId": "pride-preview",
+  "featured": true,
+  "sortOrder": 1,
+  "rightsId": "pride-text",
+  "status": "published"
+}

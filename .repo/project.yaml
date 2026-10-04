@@ -1,0 +1,30 @@
+schema_version: 1
+project_id: kitabs
+repository: soobujmiah/kitabs
+generated_at: '2026-10-04T13:39:15Z'
+generated_by: tools/repo_knowledge init
+version: 2aa07fb
+head:
+  commit: 2aa07fbfc01e81a4eee26185f2f0d913c33fdd4f
+  branch: main
+  committed_at: '2026-10-04T13:39:15Z'
+phases:
+  source: not_configured
+  completed: []
+  active: null
+  next: null
+build:
+  status: unknown
+  run_id: null
+  at: null
+test:
+  status: unknown
+  run_id: null
+  at: null
+  summary: null
+last_successful_build: null
+last_failed_build: null
+sync:
+  status: pending
+  last_synced_at: '2026-10-04T13:39:15Z'
+  source: local

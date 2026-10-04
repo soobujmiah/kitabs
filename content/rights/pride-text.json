@@ -1,0 +1,11 @@
+{
+  "id": "pride-text",
+  "basis": "public-domain",
+  "source": "Standard Ebooks Pride and Prejudice edition, pinned source commit ed94a32be3e875c0814568050c7544e03aad3ef5",
+  "jurisdiction": "Bangladesh and United States; original English work",
+  "attribution": "Jane Austen. Text source: Standard Ebooks (CC0 contributions).",
+  "allowedActions": ["metadata", "display", "read"],
+  "evidencePath": "docs/rights/pride-and-prejudice.md",
+  "reviewedAt": "2026-10-04",
+  "verificationStatus": "verified"
+}

@@ -7,4 +7,7 @@ test-results/
 .env*
 !.env.example
 *.log
+*.tsbuildinfo
+__pycache__/
+*.pyc
 .DS_Store

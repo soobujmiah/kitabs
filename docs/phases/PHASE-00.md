@@ -18,7 +18,7 @@ Read-only link/coverage check found 17 Markdown files, zero missing relative lin
 
 ## Open decisions and boundary
 
-Before a public GitHub repository or Pages release, owner must choose repository visibility, source license, site identity/domain, initial book list/languages, and provide or approve rights evidence for actual books/assets. These are release/content gates, not a reason to block local scaffolding with empty or test-only fixtures. PHASE-01 may build the domain/schema/routes against non-published fixtures; publication of those fixtures is forbidden. Visual design and provisional budgets require browser/device review. No production deployment is authorized by this documentation gate.
+At this gate the owner had not yet chosen repository visibility, source license, site identity/domain, or initial book list. Subsequent decisions: public repository, MIT software license, reserved original design assets; the web-collected local book collection is excluded from publication. A separately reviewed public-domain sample was added in PHASE-01. Visual design and provisional budgets still require browser/device review. No production deployment is authorized by this documentation gate.
 
 ## Next phase contract
 

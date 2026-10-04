@@ -12,7 +12,7 @@ The static export makes every included byte public. UI hiding, robots, or an abs
 | Licensed, publication permission verified | May publish only within scope/expiry/territory |
 | Restricted/unknown | Metadata only if allowed; no cover/text/file export |
 
-`content/rights/*.json` is the local evidence index; private contracts stay outside Git and are referenced by non-sensitive identifier. Review rights again before custom domain or public release. Code repository copyright is Copyright © Sobuj Miah / সবুজ মিয়া; no source license is assumed.
+`content/rights/*.json` is the local evidence index; private contracts stay outside Git and are referenced by non-sensitive identifier. Review rights again before custom domain or public release. Code and docs use MIT; original visual identity/design assets are reserved. The `/sdcard/Documents/Books` collection was inventoried read-only (445 files, mostly PDF/EPUB) and had no obvious rights records. The owner says these books were collected from the web and they do not hold book copyrights, so none may be copied or published from that collection. See root `ASSET_RIGHTS.md`.
 
 ## Security controls
 

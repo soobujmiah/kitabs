@@ -1,0 +1,67 @@
+name: Kitabs CI and Repository State
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '.repo/project.yaml'
+      - '.repo/STATUS.md'
+      - '.repo/events/**'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - run: python -m pip install --quiet pyyaml
+      - run: python3 -m unittest discover -s tools/repo_knowledge/tests -p 'test_*.py'
+
+  sync:
+    needs: checks
+    if: always() && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: kitabs-state-${{ github.ref_name }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - run: python -m pip install --quiet pyyaml
+      - name: Sync mechanical state, including failed checks
+        env:
+          CHECK_RESULT: ${{ needs.checks.result }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          if [ "$CHECK_RESULT" = success ]; then status=passed; else status=failed; fi
+          python3 -m tools.repo_knowledge --repository soobujmiah/kitabs sync --ci \
+            --build-status "$status" --build-run-id "$RUN_ID" \
+            --test-status "$status" --test-summary "npm check and repo-knowledge tests: $CHECK_RESULT"
+          python3 -m tools.repo_knowledge --repository soobujmiah/kitabs verify
+      - name: Commit generated state only
+        run: |
+          if git diff --quiet -- .repo; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .repo/project.yaml .repo/STATUS.md .repo/events
+          git commit -m "chore(repo-knowledge): sync state for ${{ github.sha }}"
+          git push origin HEAD:main

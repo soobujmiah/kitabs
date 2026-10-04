@@ -1,0 +1,10 @@
+{
+  "id": "pride-preview",
+  "bookId": "pride-and-prejudice",
+  "format": "html-markdown",
+  "extent": "preview",
+  "chapters": [
+    { "id": "chapter-1", "title": "Chapter 1", "order": 1, "sourcePath": "content/chapters/pride-and-prejudice/chapter-1.md" }
+  ],
+  "rightsId": "pride-text"
+}

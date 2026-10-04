@@ -1,0 +1,11 @@
+{
+  "id": "pride-cover",
+  "basis": "owner-created",
+  "source": "Original Kitabs typographic vector; no third-party imagery",
+  "jurisdiction": "Owner-authorized display on public Kitabs site",
+  "attribution": "Kitabs / Sobuj Miah",
+  "allowedActions": ["metadata", "display"],
+  "evidencePath": "docs/rights/pride-and-prejudice.md",
+  "reviewedAt": "2026-10-04",
+  "verificationStatus": "verified"
+}

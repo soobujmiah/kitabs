@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 880" role="img" aria-labelledby="title description">
+  <title id="title">Pride and Prejudice book cover</title>
+  <desc id="description">A dark walnut cover with fine brass rules and a central ornamental motif.</desc>
+  <rect width="640" height="880" fill="#241a16"/>
+  <rect x="25" y="25" width="590" height="830" fill="none" stroke="#a98b54" stroke-width="2"/>
+  <rect x="36" y="36" width="568" height="808" fill="none" stroke="#665039"/>
+  <path d="M319 139v153m-78-77h156M320 585v148m-78-74h156" stroke="#a98b54" stroke-width="2"/>
+  <path d="M320 277c-38-53-96-20-65 23 22 30 65 34 65 34s43-4 65-34c31-43-27-76-65-23zm0 312c-38 53-96 20-65-23 22-30 65-34 65-34s43 4 65 34c31 43-27 76-65 23z" fill="none" stroke="#a98b54" stroke-width="2"/>
+  <text x="320" y="405" fill="#eee2cc" text-anchor="middle" font-family="Georgia,serif" font-size="60" letter-spacing="3">PRIDE AND</text>
+  <text x="320" y="473" fill="#eee2cc" text-anchor="middle" font-family="Georgia,serif" font-size="58" letter-spacing="1">PREJUDICE</text>
+  <text x="320" y="512" fill="#c5a469" text-anchor="middle" font-family="Georgia,serif" font-size="19" letter-spacing="6">JANE AUSTEN</text>
+  <text x="320" y="795" fill="#a98b54" text-anchor="middle" font-family="Georgia,serif" font-size="16" letter-spacing="7">KITABS EDITION</text>
+</svg>
