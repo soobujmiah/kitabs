@@ -14,7 +14,7 @@
 | R08 | Performance; ADR-007 | 03–07 | Lazy assets/quality tiers | Budget/device traces | Specified |
 | R09 | SEO; ADR-001/005 | 01,06 | Static routes/metadata/sitemap | HTML/source and Pages route smoke | Partly local: static source checked; Pages pending |
 | R10 | Rights/security; ADR-003/005 | 01–08 | Rights records/publish guard | Data validation and release audit | Partly local: sample reviewed and guard unit-tested; release audit pending |
-| R11 | Data adapter; ADR-003 | 01 | Domain + BookRepository | Adapter contract/unit tests | Partly local: static adapter implemented; contract tests incomplete |
-| R12 | CI/Pages; ADR-005 | 01,08 | Workflow/export/deploy | CI and public smoke | Partly local: workflow written; CI/deploy unverified |
+| R11 | Data adapter; ADR-003 | 01 | Domain + BookRepository | Adapter contract/unit tests | Foundation implemented; CI check passed, future API contract test remains deferred |
+| R12 | CI/Pages; ADR-005 | 01,08 | Workflow/export/deploy | CI and public smoke | CI checks and state sync verified; Pages deployment pending |
 
 Every requirement has a decision/design source, phase, implementation destination, and test. A future change must add an ID or update the row before merging. Actual test run IDs and commit facts belong in `.repo/` when enabled; human-authored test interpretation may live in phase evidence/handoff.

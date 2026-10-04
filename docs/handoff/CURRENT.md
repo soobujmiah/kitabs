@@ -1,6 +1,6 @@
 # Current handoff
 
-**Date:** 2026-10-04. **Project:** `kitabs`. **Human-authored state:** documentation baseline passed; PHASE-01 static foundation is locally implemented and being verified; no site released. See [phase evidence](../phases/PHASE-01.md). This file does not assert mechanical Git/CI status; use `.repo/STATUS.md`.
+**Date:** 2026-10-04. **Project:** `kitabs`. **Human-authored state:** PHASE-00 documentation and PHASE-01 static foundation passed their gates; PHASE-02 visual/reader foundation is next; no site released. See [phase evidence](../phases/PHASE-01.md). This file does not replace mechanical Git/CI status; use `.repo/STATUS.md`.
 
 ## Completed evidence
 
@@ -15,4 +15,4 @@ Documentation selects static Next.js export + R3F/Three.js + GSAP as the current
 
 ## Next gate
 
-Finish PHASE-01 verification, review diff/security, and commit. Create the public GitHub repository and verify CI/state sync; the owner authorized public visibility and MIT code license. Before Pages deployment, complete later design/performance/accessibility phases, settle content/domain, and obtain production authorization. Do not copy the web-collected `/sdcard` files.
+Implement PHASE-02 as a complete DOM-first visual/reader experience, then work through later scene, interaction, accessibility, performance, and release phases in order. The public GitHub repository, CI checks, and CI state sync are verified. Before Pages deployment, complete release criteria, settle domain, and obtain production authorization. Do not copy the web-collected `/sdcard` files.

@@ -1,6 +1,6 @@
 # PHASE-01 — static foundation evidence
 
-**Status:** locally verified; GitHub checks passed, CI repository state sync pending. **Objective:** a rights-gated, crawlable static catalogue/reader foundation and reproducible CI. The phase is not complete until `.repo/` CI sync is verified.
+**Status:** complete at foundation scope; GitHub checks and deterministic CI state sync verified. **Objective:** a rights-gated, crawlable static catalogue/reader foundation and reproducible CI. Immersive scenes, full reader collection, public Pages deployment, and release QA are later phases.
 
 ## Implemented
 
@@ -19,8 +19,9 @@
 - Final `npm run check` passed: one validated published book/collection/cover/reader, lint, typecheck, four unit tests, and eight exported pages. The build was rerun with `KITABS_BASE_PATH=/kitabs` and `KITABS_SITE_ORIGIN=https://soobujmiah.github.io`; source inspection confirmed project-prefixed JS/cover/book links, canonical URL, and sitemap reader URL.
 - `npm install` after replacing vulnerable lint/test transitive dependencies reported zero vulnerabilities; separate `npm audit --audit-level=moderate` also found zero vulnerabilities.
 - `graphify update .` was attempted twice after code changes and failed with `cannot import name 'Node' from 'tree_sitter'`, even after a focused reinstall of the graphify environment's tree-sitter package. Graph output is unverified; this does not affect app build.
-- GitHub Actions workflow `Kitabs CI and Repository State` run [37210636276](https://github.com/soobujmiah/kitabs/actions/runs/37210636276) completed successfully on the public repository at the phase source/state commit. The first push yielded no run, so it was triggered with `workflow_dispatch`. Its `sync` job was originally push-only and skipped on manual dispatch; the workflow condition has been corrected and requires another run to verify CI state sync.
+- GitHub Actions workflow `Kitabs CI and Repository State` run [37210636276](https://github.com/soobujmiah/kitabs/actions/runs/37210636276) passed checks on manual dispatch; its original push-only sync condition skipped that event. The corrected workflow's [push run 37211105994](https://github.com/soobujmiah/kitabs/actions/runs/37211105994) passed both `checks` and `sync`. The CI-generated `.repo/STATUS.md` on remote `main` reports build/test passed for source commit `120f862`, run `37211105994`, `sync.source: ci`, PHASE-00 complete and PHASE-01 active at observation time.
+- Staged-file audit before public push found no PDF/EPUB/local-collection payload, secret patterns, or generated cache files. README/source/rights evidence and export were reviewed; GitHub repository is public and MIT applies only to software/documentation.
 
 ## Remaining phase gates
 
-Verify deterministic `.repo/` CI sync, source/rights exclusion audit, docs/traceability consistency, and reviewed commit. Accessibility/browser/device measurements and aesthetic approval remain later phases. No production deployment is included in PHASE-01.
+Foundation exit criteria passed. Tag `phase-01-done` after this evidence update to let `.repo/` derive the completed phase. Accessibility/browser/device measurements and aesthetic approval remain later phases. No production deployment is included in PHASE-01.
